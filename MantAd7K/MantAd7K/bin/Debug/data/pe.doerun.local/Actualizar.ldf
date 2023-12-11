@@ -1,0 +1,36 @@
+dn:CN=Carlos Alberto Grimaldi Flores,OU=Ocp_Mina,OU=Ocp_users,OU=OCP_PERU,DC=pe,DC=doerun,DC=local
+changetype: modify
+replace:description
+description: -
+-
+replace:displayName
+displayName:Carlos Alberto Grimaldi Flores
+-
+replace:mail
+mail:cgrimaldi@ocpperu.com
+-
+replace:givenName
+givenName:Carlos Alberto
+-
+replace:sn
+sn:Grimaldi Flores
+-
+replace:l
+l:Mina
+-
+replace:telephoneNumber
+telephoneNumber:+51 989 142 914
+-
+replace:department
+department:TI
+-
+replace:title
+title:Coordinador de TI
+-
+replace:company
+company:OCP Cobriza
+-
+replace:wWWHomePage
+wWWHomePage:www.ocpperu.com
+-
+

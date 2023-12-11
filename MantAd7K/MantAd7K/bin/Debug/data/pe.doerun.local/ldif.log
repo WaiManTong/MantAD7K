@@ -1,0 +1,24 @@
+﻿Conectándose a "cobw2k3pdc02.pe.doerun.local"
+Iniciando sesión como usuario actual usando SSPI
+Importando directorio desde el archivo ".\data\pe.doerun.local\Actualizar.ldf"
+Cargando entradas
+1: CN=Carlos Alberto Grimaldi Flores,OU=Ocp_Mina,OU=Ocp_users,OU=OCP_PERU,DC=pe,DC=doerun,DC=local
+Entry DN: CN=Carlos Alberto Grimaldi Flores,OU=Ocp_Mina,OU=Ocp_users,OU=OCP_PERU,DC=pe,DC=doerun,DC=local
+changetype: modify
+Attribute 0) description:-
+Attribute 1) displayName:Carlos Alberto Grimaldi Flores
+Attribute 2) mail:cgrimaldi@ocpperu.com
+Attribute 3) givenName:Carlos Alberto
+Attribute 4) sn:Grimaldi Flores
+Attribute 5) l:Mina
+Attribute 6) telephoneNumber:+51 989 142 914
+Attribute 7) department:TI
+Attribute 8) title:Coordinador de TI
+Attribute 9) company:OCP Cobriza
+Attribute 10) wWWHomePage:www.ocpperu.com
+
+La entrada se modificó correctamente.
+
+1 entrada modificada correctamente.
+
+El comando se completó correctamente
