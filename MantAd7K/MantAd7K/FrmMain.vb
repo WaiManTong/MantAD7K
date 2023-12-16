@@ -80,7 +80,7 @@ Public Class FrmMain
         Return Nothing
     End Function
     Sub GenerarQR()
-        Cursor.Current = Windows.Forms.Cursors.WaitCursor
+        Cursor.Current = Cursors.WaitCursor
         Try
             Dim nQR As Integer = 0
             ' Verifica si hay un formulario cargado antes de intentar manipular el DataGridView
@@ -158,12 +158,75 @@ Public Class FrmMain
             TSPB.Visible = False
             TSSLB.Visible = False
         Catch ex As Exception
-            Cursor.Current = Windows.Forms.Cursors.Default
+            Cursor.Current = Cursors.Default
             MsgBox(ex.Message)
         End Try
-        Cursor.Current = Windows.Forms.Cursors.Default
+        Cursor.Current = Cursors.Default
     End Sub
 
+    Sub GenerateSign()
+        Cursor.Current = Cursors.WaitCursor
+        Try
+            Dim nSign As Integer = 0
+            ' Verifica si hay un formulario cargado antes de intentar manipular el DataGridView
+            If ObtenerFormularioVisible() IsNot Nothing AndAlso TypeOf ObtenerFormularioVisible() Is FrmVisorAD Then
+                ' Accede al DataGridView en el formulario cargado
+                Dim dataGridViewEnFormulario As DataGridView = DirectCast(ObtenerFormularioVisible.Controls("dataGridView1"), DataGridView)
+
+                TSPB.Maximum = dataGridViewEnFormulario.RowCount
+                TSPB.Visible = True
+                TSSLB.Visible = True
+                TSSLB.Text = " "
+                Dim _plantilla As String = File.ReadAllText(My.Settings.RutaData & "\Plantilla.htm")
+                Dim _Esquema As String() = File.ReadAllLines(My.Settings.RutaData & "\FieldsSign.csv")
+
+
+                ' Iterar a través de las filas del DataGridView
+                For Each fila As DataGridViewRow In dataGridViewEnFormulario.Rows
+                    If (fila.Cells("mail").Value.ToString <> Nothing And fila.Cells("mail").Value.ToString <> "-") Then
+
+                        If (fila.Cells("title").Value.ToString <> Nothing And fila.Cells("title").Value.ToString <> "-") Or
+                               (fila.Cells("telephoneNumber").Value.ToString <> Nothing And fila.Cells("telephoneNumber").Value.ToString <> "-") Then
+
+                            Dim _firma As String = _plantilla
+
+                            ' Recorrer la matriz y realizar el reemplazo
+                            For Each linea As String In _Esquema
+                                ' Dividir la línea en las dos cadenas
+                                Dim partes As String() = linea.Split(","c)
+
+                                ' Verificar que la línea tiene dos partes
+                                If partes.Length = 2 Then
+                                    ' Obtener los valores de la línea
+                                    Dim cadena1 As String = partes(0)
+                                    Dim cadena2 As String = partes(1)
+
+                                    ' Realizar el reemplazo en la variable de texto
+                                    _firma = _firma.Replace("{" & cadena1 & "}", Convert.ToString(fila.Cells(cadena2).Value))
+                                End If
+                            Next
+
+                            ' Especifica la ruta completa del archivo de texto
+                            Dim filePath As String = My.Settings.RutaDataSign & fila.Cells("mail").Value.ToString & ".htm"
+                            ' Si el archivo ya existe, así que se sobrescribe con el nuevo contenido
+                            File.WriteAllText(filePath, _firma)
+                        End If
+                    End If
+                    nSign = nSign + 1
+                Next
+            Else
+                MsgBox("El Visor no esta disponible.")
+            End If
+            TSSL.Text = "Se generaron " & nSign & " Firmas con exito."
+            TSPB.Visible = False
+            TSSLB.Visible = False
+        Catch ex As Exception
+            Cursor.Current = Cursors.Default
+            MsgBox(ex.Message)
+        End Try
+        Cursor.Current = Cursors.Default
+
+    End Sub
     Private Sub CerrarFormularioCargado()
         ' Recorre los controles del Panel y cierra cualquier formulario encontrado.
         For Each control As Control In PnWindows.Controls
@@ -204,20 +267,6 @@ Public Class FrmMain
         BtnGenQR.Visible = _visible
     End Sub
 
-    Private Sub BtnAD_Click(sender As Object, e As EventArgs) Handles BtnAD.Click
-        BtnsAD(True)
-        BtnsTools(False)
-        BtnAD.Enabled = False
-        BtnTools.Enabled = True
-    End Sub
-
-    Private Sub BtnTools_Click(sender As Object, e As EventArgs) Handles BtnTools.Click
-        BtnsAD(False)
-        BtnsTools(True)
-        BtnAD.Enabled = True
-        BtnTools.Enabled = False
-    End Sub
-
     Private Sub BtnExit_Click(sender As Object, e As EventArgs) Handles BtnExit.Click
         End
     End Sub
@@ -230,7 +279,7 @@ Public Class FrmMain
     End Sub
 
     Private Sub BtnConfigFTP_Click(sender As Object, e As EventArgs) Handles BtnConfigFTP.Click
-        'CerrarFormularioCargado()
+        CerrarFormularioCargado()
         Dim _configftp As New FrmConfigFTP(My.Settings.RutaData)
         CargarFormularioEnPanel(_configftp)
         formulariosCargados.Add(_configftp)
@@ -271,10 +320,10 @@ Public Class FrmMain
             End Using
             UploadFileToFtp(_ftp.FTPServer, _ftp.FTPUsername, _ftp.FTPPassword, _ftp.LocalFolderPath, _ftp.RemoteFolderPath)
         Catch ex As Exception
-            Cursor.Current = Windows.Forms.Cursors.Default
+            Cursor.Current = Cursors.Default
             MessageBox.Show(ex.Message)
         End Try
-        Cursor.Current = Windows.Forms.Cursors.Default
+        Cursor.Current = Cursors.Default
     End Sub
 
     Sub UploadFileToFtp(ByVal ftpServer As String, ByVal ftpUsername As String, ByVal ftpPassword As String, ByVal localFilePath As String, ByVal remoteFilePath As String)
@@ -319,6 +368,17 @@ Public Class FrmMain
 
     Private Sub TSSL_TextChanged(sender As Object, e As EventArgs) Handles TSSL.TextChanged
         Beep()
+
+    End Sub
+
+    Private Sub BtnConfigTemSign_Click(sender As Object, e As EventArgs) Handles BtnConfigTemSign.Click
+        Dim _configsigndesign As New FrmSignDesign
+        CargarFormularioEnPanel(_configsigndesign)
+        formulariosCargados.Add(_configsigndesign)
+    End Sub
+
+    Private Sub BtnGenSignOutlook_Click(sender As Object, e As EventArgs) Handles BtnGenSignOutlook.Click
+        GenerateSign()
 
     End Sub
 End Class

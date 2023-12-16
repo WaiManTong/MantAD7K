@@ -35,10 +35,8 @@ Partial Class FrmMain
         Me.BtnConfigFTP = New System.Windows.Forms.Button()
         Me.BtnUploadFTP = New System.Windows.Forms.Button()
         Me.BtnGenQR = New System.Windows.Forms.Button()
-        Me.BtnTools = New System.Windows.Forms.Button()
         Me.BtnNewAD = New System.Windows.Forms.Button()
         Me.BtnLoadAD = New System.Windows.Forms.Button()
-        Me.BtnAD = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.SS.SuspendLayout()
         Me.PnMenu.SuspendLayout()
@@ -50,18 +48,20 @@ Partial Class FrmMain
         Me.PnWindows.BackColor = System.Drawing.Color.Black
         Me.PnWindows.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PnWindows.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.PnWindows.Location = New System.Drawing.Point(250, 0)
+        Me.PnWindows.Location = New System.Drawing.Point(167, 0)
+        Me.PnWindows.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.PnWindows.Name = "PnWindows"
-        Me.PnWindows.Size = New System.Drawing.Size(528, 834)
+        Me.PnWindows.Size = New System.Drawing.Size(617, 539)
         Me.PnWindows.TabIndex = 2
         '
         'SS
         '
         Me.SS.ImageScalingSize = New System.Drawing.Size(24, 24)
         Me.SS.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.TSSL, Me.TSPB, Me.TSSLB})
-        Me.SS.Location = New System.Drawing.Point(0, 834)
+        Me.SS.Location = New System.Drawing.Point(0, 539)
         Me.SS.Name = "SS"
-        Me.SS.Size = New System.Drawing.Size(778, 22)
+        Me.SS.Padding = New System.Windows.Forms.Padding(1, 0, 9, 0)
+        Me.SS.Size = New System.Drawing.Size(784, 22)
         Me.SS.TabIndex = 1
         '
         'TSSL
@@ -77,13 +77,13 @@ Partial Class FrmMain
         'TSPB
         '
         Me.TSPB.Name = "TSPB"
-        Me.TSPB.Size = New System.Drawing.Size(100, 24)
+        Me.TSPB.Size = New System.Drawing.Size(67, 16)
         Me.TSPB.Visible = False
         '
         'TSSLB
         '
         Me.TSSLB.Name = "TSSLB"
-        Me.TSSLB.Size = New System.Drawing.Size(112, 25)
+        Me.TSSLB.Size = New System.Drawing.Size(68, 17)
         Me.TSSLB.Text = "001 de 1000"
         Me.TSSLB.Visible = False
         '
@@ -96,15 +96,14 @@ Partial Class FrmMain
         Me.PnMenu.Controls.Add(Me.BtnConfigFTP)
         Me.PnMenu.Controls.Add(Me.BtnUploadFTP)
         Me.PnMenu.Controls.Add(Me.BtnGenQR)
-        Me.PnMenu.Controls.Add(Me.BtnTools)
         Me.PnMenu.Controls.Add(Me.BtnNewAD)
         Me.PnMenu.Controls.Add(Me.BtnLoadAD)
-        Me.PnMenu.Controls.Add(Me.BtnAD)
         Me.PnMenu.Controls.Add(Me.PictureBox1)
         Me.PnMenu.Dock = System.Windows.Forms.DockStyle.Left
         Me.PnMenu.Location = New System.Drawing.Point(0, 0)
+        Me.PnMenu.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.PnMenu.Name = "PnMenu"
-        Me.PnMenu.Size = New System.Drawing.Size(250, 834)
+        Me.PnMenu.Size = New System.Drawing.Size(167, 539)
         Me.PnMenu.TabIndex = 3
         '
         'BtnExit
@@ -114,13 +113,14 @@ Partial Class FrmMain
         Me.BtnExit.FlatAppearance.BorderSize = 0
         Me.BtnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnExit.ForeColor = System.Drawing.SystemColors.MenuText
-        Me.BtnExit.Location = New System.Drawing.Point(0, 580)
+        Me.BtnExit.Location = New System.Drawing.Point(0, 312)
+        Me.BtnExit.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.BtnExit.Name = "BtnExit"
-        Me.BtnExit.Padding = New System.Windows.Forms.Padding(30, 0, 0, 0)
-        Me.BtnExit.Size = New System.Drawing.Size(248, 50)
+        Me.BtnExit.Padding = New System.Windows.Forms.Padding(20, 0, 0, 0)
+        Me.BtnExit.Size = New System.Drawing.Size(165, 32)
         Me.BtnExit.TabIndex = 15
-        Me.BtnExit.Text = "Salir"
-        Me.BtnExit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BtnExit.Text = "X"
+        Me.BtnExit.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.BtnExit.UseVisualStyleBackColor = False
         '
         'BtnConfigTemSign
@@ -130,14 +130,15 @@ Partial Class FrmMain
         Me.BtnConfigTemSign.FlatAppearance.BorderSize = 0
         Me.BtnConfigTemSign.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnConfigTemSign.ForeColor = System.Drawing.SystemColors.MenuText
-        Me.BtnConfigTemSign.Location = New System.Drawing.Point(0, 540)
+        Me.BtnConfigTemSign.Location = New System.Drawing.Point(0, 286)
+        Me.BtnConfigTemSign.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.BtnConfigTemSign.Name = "BtnConfigTemSign"
-        Me.BtnConfigTemSign.Padding = New System.Windows.Forms.Padding(30, 0, 0, 0)
-        Me.BtnConfigTemSign.Size = New System.Drawing.Size(248, 40)
+        Me.BtnConfigTemSign.Padding = New System.Windows.Forms.Padding(20, 0, 0, 0)
+        Me.BtnConfigTemSign.Size = New System.Drawing.Size(165, 26)
         Me.BtnConfigTemSign.TabIndex = 14
         Me.BtnConfigTemSign.Text = "Configurar Plantilla Firma"
+        Me.BtnConfigTemSign.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.BtnConfigTemSign.UseVisualStyleBackColor = False
-        Me.BtnConfigTemSign.Visible = False
         '
         'BtnGenSignOutlook
         '
@@ -146,14 +147,15 @@ Partial Class FrmMain
         Me.BtnGenSignOutlook.FlatAppearance.BorderSize = 0
         Me.BtnGenSignOutlook.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnGenSignOutlook.ForeColor = System.Drawing.SystemColors.MenuText
-        Me.BtnGenSignOutlook.Location = New System.Drawing.Point(0, 500)
+        Me.BtnGenSignOutlook.Location = New System.Drawing.Point(0, 260)
+        Me.BtnGenSignOutlook.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.BtnGenSignOutlook.Name = "BtnGenSignOutlook"
-        Me.BtnGenSignOutlook.Padding = New System.Windows.Forms.Padding(30, 0, 0, 0)
-        Me.BtnGenSignOutlook.Size = New System.Drawing.Size(248, 40)
+        Me.BtnGenSignOutlook.Padding = New System.Windows.Forms.Padding(20, 0, 0, 0)
+        Me.BtnGenSignOutlook.Size = New System.Drawing.Size(165, 26)
         Me.BtnGenSignOutlook.TabIndex = 13
         Me.BtnGenSignOutlook.Text = "Generar Firma Outlook"
+        Me.BtnGenSignOutlook.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.BtnGenSignOutlook.UseVisualStyleBackColor = False
-        Me.BtnGenSignOutlook.Visible = False
         '
         'BtnConfigFTP
         '
@@ -162,14 +164,15 @@ Partial Class FrmMain
         Me.BtnConfigFTP.FlatAppearance.BorderSize = 0
         Me.BtnConfigFTP.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnConfigFTP.ForeColor = System.Drawing.SystemColors.MenuText
-        Me.BtnConfigFTP.Location = New System.Drawing.Point(0, 460)
+        Me.BtnConfigFTP.Location = New System.Drawing.Point(0, 234)
+        Me.BtnConfigFTP.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.BtnConfigFTP.Name = "BtnConfigFTP"
-        Me.BtnConfigFTP.Padding = New System.Windows.Forms.Padding(30, 0, 0, 0)
-        Me.BtnConfigFTP.Size = New System.Drawing.Size(248, 40)
+        Me.BtnConfigFTP.Padding = New System.Windows.Forms.Padding(20, 0, 0, 0)
+        Me.BtnConfigFTP.Size = New System.Drawing.Size(165, 26)
         Me.BtnConfigFTP.TabIndex = 12
         Me.BtnConfigFTP.Text = "Configurar FTP"
+        Me.BtnConfigFTP.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.BtnConfigFTP.UseVisualStyleBackColor = False
-        Me.BtnConfigFTP.Visible = False
         '
         'BtnUploadFTP
         '
@@ -178,14 +181,15 @@ Partial Class FrmMain
         Me.BtnUploadFTP.FlatAppearance.BorderSize = 0
         Me.BtnUploadFTP.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnUploadFTP.ForeColor = System.Drawing.SystemColors.MenuText
-        Me.BtnUploadFTP.Location = New System.Drawing.Point(0, 420)
+        Me.BtnUploadFTP.Location = New System.Drawing.Point(0, 208)
+        Me.BtnUploadFTP.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.BtnUploadFTP.Name = "BtnUploadFTP"
-        Me.BtnUploadFTP.Padding = New System.Windows.Forms.Padding(30, 0, 0, 0)
-        Me.BtnUploadFTP.Size = New System.Drawing.Size(248, 40)
+        Me.BtnUploadFTP.Padding = New System.Windows.Forms.Padding(20, 0, 0, 0)
+        Me.BtnUploadFTP.Size = New System.Drawing.Size(165, 26)
         Me.BtnUploadFTP.TabIndex = 11
         Me.BtnUploadFTP.Text = "Subir QR FTP"
+        Me.BtnUploadFTP.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.BtnUploadFTP.UseVisualStyleBackColor = False
-        Me.BtnUploadFTP.Visible = False
         '
         'BtnGenQR
         '
@@ -194,30 +198,15 @@ Partial Class FrmMain
         Me.BtnGenQR.FlatAppearance.BorderSize = 0
         Me.BtnGenQR.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnGenQR.ForeColor = System.Drawing.SystemColors.MenuText
-        Me.BtnGenQR.Location = New System.Drawing.Point(0, 380)
+        Me.BtnGenQR.Location = New System.Drawing.Point(0, 182)
+        Me.BtnGenQR.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.BtnGenQR.Name = "BtnGenQR"
-        Me.BtnGenQR.Padding = New System.Windows.Forms.Padding(30, 0, 0, 0)
-        Me.BtnGenQR.Size = New System.Drawing.Size(248, 40)
+        Me.BtnGenQR.Padding = New System.Windows.Forms.Padding(20, 0, 0, 0)
+        Me.BtnGenQR.Size = New System.Drawing.Size(165, 26)
         Me.BtnGenQR.TabIndex = 10
         Me.BtnGenQR.Text = "Generar QR"
+        Me.BtnGenQR.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.BtnGenQR.UseVisualStyleBackColor = False
-        Me.BtnGenQR.Visible = False
-        '
-        'BtnTools
-        '
-        Me.BtnTools.BackColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.BtnTools.Dock = System.Windows.Forms.DockStyle.Top
-        Me.BtnTools.FlatAppearance.BorderSize = 0
-        Me.BtnTools.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnTools.ForeColor = System.Drawing.SystemColors.MenuText
-        Me.BtnTools.Location = New System.Drawing.Point(0, 330)
-        Me.BtnTools.Name = "BtnTools"
-        Me.BtnTools.Padding = New System.Windows.Forms.Padding(30, 0, 0, 0)
-        Me.BtnTools.Size = New System.Drawing.Size(248, 50)
-        Me.BtnTools.TabIndex = 9
-        Me.BtnTools.Text = "Herramientas"
-        Me.BtnTools.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BtnTools.UseVisualStyleBackColor = False
         '
         'BtnNewAD
         '
@@ -226,12 +215,14 @@ Partial Class FrmMain
         Me.BtnNewAD.FlatAppearance.BorderSize = 0
         Me.BtnNewAD.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnNewAD.ForeColor = System.Drawing.SystemColors.MenuText
-        Me.BtnNewAD.Location = New System.Drawing.Point(0, 290)
+        Me.BtnNewAD.Location = New System.Drawing.Point(0, 156)
+        Me.BtnNewAD.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.BtnNewAD.Name = "BtnNewAD"
-        Me.BtnNewAD.Padding = New System.Windows.Forms.Padding(30, 0, 0, 0)
-        Me.BtnNewAD.Size = New System.Drawing.Size(248, 40)
+        Me.BtnNewAD.Padding = New System.Windows.Forms.Padding(20, 0, 0, 0)
+        Me.BtnNewAD.Size = New System.Drawing.Size(165, 26)
         Me.BtnNewAD.TabIndex = 7
         Me.BtnNewAD.Text = "Crear Usuario"
+        Me.BtnNewAD.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.BtnNewAD.UseVisualStyleBackColor = False
         '
         'BtnLoadAD
@@ -241,51 +232,38 @@ Partial Class FrmMain
         Me.BtnLoadAD.FlatAppearance.BorderSize = 0
         Me.BtnLoadAD.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnLoadAD.ForeColor = System.Drawing.SystemColors.MenuText
-        Me.BtnLoadAD.Location = New System.Drawing.Point(0, 250)
+        Me.BtnLoadAD.Location = New System.Drawing.Point(0, 130)
+        Me.BtnLoadAD.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.BtnLoadAD.Name = "BtnLoadAD"
-        Me.BtnLoadAD.Padding = New System.Windows.Forms.Padding(30, 0, 0, 0)
-        Me.BtnLoadAD.Size = New System.Drawing.Size(248, 40)
+        Me.BtnLoadAD.Padding = New System.Windows.Forms.Padding(20, 0, 0, 0)
+        Me.BtnLoadAD.Size = New System.Drawing.Size(165, 26)
         Me.BtnLoadAD.TabIndex = 5
         Me.BtnLoadAD.Text = "Leer AD"
+        Me.BtnLoadAD.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.BtnLoadAD.UseVisualStyleBackColor = False
-        '
-        'BtnAD
-        '
-        Me.BtnAD.BackColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.BtnAD.Dock = System.Windows.Forms.DockStyle.Top
-        Me.BtnAD.Enabled = False
-        Me.BtnAD.FlatAppearance.BorderSize = 0
-        Me.BtnAD.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnAD.ForeColor = System.Drawing.SystemColors.MenuText
-        Me.BtnAD.Location = New System.Drawing.Point(0, 200)
-        Me.BtnAD.Name = "BtnAD"
-        Me.BtnAD.Padding = New System.Windows.Forms.Padding(30, 0, 0, 0)
-        Me.BtnAD.Size = New System.Drawing.Size(248, 50)
-        Me.BtnAD.TabIndex = 4
-        Me.BtnAD.Text = "Directorio Activo"
-        Me.BtnAD.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BtnAD.UseVisualStyleBackColor = False
         '
         'PictureBox1
         '
         Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Top
         Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(248, 200)
+        Me.PictureBox1.Size = New System.Drawing.Size(165, 130)
         Me.PictureBox1.TabIndex = 4
         Me.PictureBox1.TabStop = False
         '
         'FrmMain
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.ClientSize = New System.Drawing.Size(778, 856)
+        Me.ClientSize = New System.Drawing.Size(784, 561)
         Me.Controls.Add(Me.PnWindows)
         Me.Controls.Add(Me.PnMenu)
         Me.Controls.Add(Me.SS)
         Me.ForeColor = System.Drawing.SystemColors.Control
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.MinimumSize = New System.Drawing.Size(800, 600)
         Me.Name = "FrmMain"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
@@ -303,7 +281,6 @@ Partial Class FrmMain
     Friend WithEvents PnWindows As Windows.Forms.Panel
     Friend WithEvents PnMenu As Windows.Forms.Panel
     Friend WithEvents PictureBox1 As Windows.Forms.PictureBox
-    Friend WithEvents BtnAD As Windows.Forms.Button
     Friend WithEvents BtnLoadAD As Windows.Forms.Button
     Friend WithEvents BtnExit As Windows.Forms.Button
     Friend WithEvents BtnConfigTemSign As Windows.Forms.Button
@@ -311,7 +288,6 @@ Partial Class FrmMain
     Friend WithEvents BtnConfigFTP As Windows.Forms.Button
     Friend WithEvents BtnUploadFTP As Windows.Forms.Button
     Friend WithEvents BtnGenQR As Windows.Forms.Button
-    Friend WithEvents BtnTools As Windows.Forms.Button
     Friend WithEvents BtnNewAD As Windows.Forms.Button
     Friend WithEvents TSSL As Windows.Forms.ToolStripStatusLabel
     Friend WithEvents TSPB As Windows.Forms.ToolStripProgressBar
