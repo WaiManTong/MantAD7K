@@ -49,13 +49,14 @@ Partial Class FrmMain
         Me.PnWindows.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PnWindows.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.PnWindows.Location = New System.Drawing.Point(167, 0)
-        Me.PnWindows.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.PnWindows.Margin = New System.Windows.Forms.Padding(2)
         Me.PnWindows.Name = "PnWindows"
         Me.PnWindows.Size = New System.Drawing.Size(617, 539)
         Me.PnWindows.TabIndex = 2
         '
         'SS
         '
+        Me.SS.BackColor = System.Drawing.SystemColors.Desktop
         Me.SS.ImageScalingSize = New System.Drawing.Size(24, 24)
         Me.SS.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.TSSL, Me.TSPB, Me.TSSLB})
         Me.SS.Location = New System.Drawing.Point(0, 539)
@@ -101,7 +102,7 @@ Partial Class FrmMain
         Me.PnMenu.Controls.Add(Me.PictureBox1)
         Me.PnMenu.Dock = System.Windows.Forms.DockStyle.Left
         Me.PnMenu.Location = New System.Drawing.Point(0, 0)
-        Me.PnMenu.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.PnMenu.Margin = New System.Windows.Forms.Padding(2)
         Me.PnMenu.Name = "PnMenu"
         Me.PnMenu.Size = New System.Drawing.Size(167, 539)
         Me.PnMenu.TabIndex = 3
@@ -114,7 +115,7 @@ Partial Class FrmMain
         Me.BtnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnExit.ForeColor = System.Drawing.SystemColors.MenuText
         Me.BtnExit.Location = New System.Drawing.Point(0, 312)
-        Me.BtnExit.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.BtnExit.Margin = New System.Windows.Forms.Padding(2)
         Me.BtnExit.Name = "BtnExit"
         Me.BtnExit.Padding = New System.Windows.Forms.Padding(20, 0, 0, 0)
         Me.BtnExit.Size = New System.Drawing.Size(165, 32)
@@ -131,7 +132,7 @@ Partial Class FrmMain
         Me.BtnConfigTemSign.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnConfigTemSign.ForeColor = System.Drawing.SystemColors.MenuText
         Me.BtnConfigTemSign.Location = New System.Drawing.Point(0, 286)
-        Me.BtnConfigTemSign.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.BtnConfigTemSign.Margin = New System.Windows.Forms.Padding(2)
         Me.BtnConfigTemSign.Name = "BtnConfigTemSign"
         Me.BtnConfigTemSign.Padding = New System.Windows.Forms.Padding(20, 0, 0, 0)
         Me.BtnConfigTemSign.Size = New System.Drawing.Size(165, 26)
@@ -148,7 +149,7 @@ Partial Class FrmMain
         Me.BtnGenSignOutlook.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnGenSignOutlook.ForeColor = System.Drawing.SystemColors.MenuText
         Me.BtnGenSignOutlook.Location = New System.Drawing.Point(0, 260)
-        Me.BtnGenSignOutlook.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.BtnGenSignOutlook.Margin = New System.Windows.Forms.Padding(2)
         Me.BtnGenSignOutlook.Name = "BtnGenSignOutlook"
         Me.BtnGenSignOutlook.Padding = New System.Windows.Forms.Padding(20, 0, 0, 0)
         Me.BtnGenSignOutlook.Size = New System.Drawing.Size(165, 26)
@@ -165,7 +166,7 @@ Partial Class FrmMain
         Me.BtnConfigFTP.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnConfigFTP.ForeColor = System.Drawing.SystemColors.MenuText
         Me.BtnConfigFTP.Location = New System.Drawing.Point(0, 234)
-        Me.BtnConfigFTP.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.BtnConfigFTP.Margin = New System.Windows.Forms.Padding(2)
         Me.BtnConfigFTP.Name = "BtnConfigFTP"
         Me.BtnConfigFTP.Padding = New System.Windows.Forms.Padding(20, 0, 0, 0)
         Me.BtnConfigFTP.Size = New System.Drawing.Size(165, 26)
@@ -182,7 +183,7 @@ Partial Class FrmMain
         Me.BtnUploadFTP.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnUploadFTP.ForeColor = System.Drawing.SystemColors.MenuText
         Me.BtnUploadFTP.Location = New System.Drawing.Point(0, 208)
-        Me.BtnUploadFTP.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.BtnUploadFTP.Margin = New System.Windows.Forms.Padding(2)
         Me.BtnUploadFTP.Name = "BtnUploadFTP"
         Me.BtnUploadFTP.Padding = New System.Windows.Forms.Padding(20, 0, 0, 0)
         Me.BtnUploadFTP.Size = New System.Drawing.Size(165, 26)
@@ -199,7 +200,7 @@ Partial Class FrmMain
         Me.BtnGenQR.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnGenQR.ForeColor = System.Drawing.SystemColors.MenuText
         Me.BtnGenQR.Location = New System.Drawing.Point(0, 182)
-        Me.BtnGenQR.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.BtnGenQR.Margin = New System.Windows.Forms.Padding(2)
         Me.BtnGenQR.Name = "BtnGenQR"
         Me.BtnGenQR.Padding = New System.Windows.Forms.Padding(20, 0, 0, 0)
         Me.BtnGenQR.Size = New System.Drawing.Size(165, 26)
@@ -216,7 +217,7 @@ Partial Class FrmMain
         Me.BtnNewAD.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnNewAD.ForeColor = System.Drawing.SystemColors.MenuText
         Me.BtnNewAD.Location = New System.Drawing.Point(0, 156)
-        Me.BtnNewAD.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.BtnNewAD.Margin = New System.Windows.Forms.Padding(2)
         Me.BtnNewAD.Name = "BtnNewAD"
         Me.BtnNewAD.Padding = New System.Windows.Forms.Padding(20, 0, 0, 0)
         Me.BtnNewAD.Size = New System.Drawing.Size(165, 26)
@@ -233,7 +234,7 @@ Partial Class FrmMain
         Me.BtnLoadAD.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnLoadAD.ForeColor = System.Drawing.SystemColors.MenuText
         Me.BtnLoadAD.Location = New System.Drawing.Point(0, 130)
-        Me.BtnLoadAD.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.BtnLoadAD.Margin = New System.Windows.Forms.Padding(2)
         Me.BtnLoadAD.Name = "BtnLoadAD"
         Me.BtnLoadAD.Padding = New System.Windows.Forms.Padding(20, 0, 0, 0)
         Me.BtnLoadAD.Size = New System.Drawing.Size(165, 26)
@@ -246,7 +247,7 @@ Partial Class FrmMain
         '
         Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Top
         Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(165, 130)
         Me.PictureBox1.TabIndex = 4
@@ -263,7 +264,7 @@ Partial Class FrmMain
         Me.Controls.Add(Me.SS)
         Me.ForeColor = System.Drawing.SystemColors.Control
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.MinimumSize = New System.Drawing.Size(800, 600)
         Me.Name = "FrmMain"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen

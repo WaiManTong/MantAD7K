@@ -381,4 +381,10 @@ Public Class FrmMain
         GenerateSign()
 
     End Sub
+
+    Private Sub BtnNewAD_Click(sender As Object, e As EventArgs) Handles BtnNewAD.Click
+        Dim _configsigndesign As New FrmNewUserAD
+        CargarFormularioEnPanel(_configsigndesign)
+        formulariosCargados.Add(_configsigndesign)
+    End Sub
 End Class

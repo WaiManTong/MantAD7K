@@ -275,6 +275,7 @@ Public Class FrmVisorAD
     End Sub
 
     Private Sub FrmVisorAD_Load(sender As Object, e As EventArgs) Handles Me.Load
+        ColorearFRM(Me)
         Try
             ' Obtener información del usuario actual
             Dim currentUser As WindowsIdentity = WindowsIdentity.GetCurrent()

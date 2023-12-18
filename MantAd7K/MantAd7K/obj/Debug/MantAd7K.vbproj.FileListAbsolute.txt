@@ -363,3 +363,4 @@ C:\Users\cgrimaldi\Source\Repos\MantAD7K\MantAd7K\MantAd7K\obj\Debug\MantAd7K.vb
 C:\Users\cgrimaldi\Source\Repos\MantAD7K\MantAd7K\MantAd7K\obj\Debug\MantAd7K.exe
 C:\Users\cgrimaldi\Source\Repos\MantAD7K\MantAd7K\MantAd7K\obj\Debug\MantAd7K.pdb
 C:\Users\cgrimaldi\Source\Repos\MantAD7K\MantAd7K\MantAd7K\obj\Debug\MantAd7K.FrmSignDesign.resources
+C:\Users\cgrimaldi\source\repos\MantAD7K\MantAd7K\MantAd7K\obj\Debug\MantAd7K.FrmNewUserAD.resources

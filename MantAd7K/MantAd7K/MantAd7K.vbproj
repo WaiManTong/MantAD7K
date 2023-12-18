@@ -114,6 +114,12 @@
     <Compile Include="frmMantenimientoUsuarios.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FrmNewUserAD.Designer.vb">
+      <DependentUpon>FrmNewUserAD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNewUserAD.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FrmSignDesign.Designer.vb">
       <DependentUpon>FrmSignDesign.vb</DependentUpon>
     </Compile>
@@ -150,6 +156,7 @@
     </Reference>
     <Reference Include="System.Data" />
     <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.DirectoryServices.AccountManagement" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Memory, Version=4.0.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Memory.4.5.0\lib\netstandard2.0\System.Memory.dll</HintPath>
@@ -181,6 +188,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmMantenimientoUsuarios.resx">
       <DependentUpon>frmMantenimientoUsuarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNewUserAD.resx">
+      <DependentUpon>FrmNewUserAD.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmSignDesign.resx">
       <DependentUpon>FrmSignDesign.vb</DependentUpon>

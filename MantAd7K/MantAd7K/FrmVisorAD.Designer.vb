@@ -40,9 +40,10 @@ Partial Class FrmVisorAD
         Me.LblCnx.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.LblCnx.AutoSize = True
         Me.LblCnx.ForeColor = System.Drawing.SystemColors.Info
-        Me.LblCnx.Location = New System.Drawing.Point(12, 9)
+        Me.LblCnx.Location = New System.Drawing.Point(8, 6)
+        Me.LblCnx.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.LblCnx.Name = "LblCnx"
-        Me.LblCnx.Size = New System.Drawing.Size(75, 20)
+        Me.LblCnx.Size = New System.Drawing.Size(51, 13)
         Me.LblCnx.TabIndex = 0
         Me.LblCnx.Text = "Dominio :"
         '
@@ -53,9 +54,10 @@ Partial Class FrmVisorAD
         Me.BtnFilter.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ControlDarkDark
         Me.BtnFilter.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnFilter.ForeColor = System.Drawing.SystemColors.Info
-        Me.BtnFilter.Location = New System.Drawing.Point(16, 32)
+        Me.BtnFilter.Location = New System.Drawing.Point(11, 21)
+        Me.BtnFilter.Margin = New System.Windows.Forms.Padding(2)
         Me.BtnFilter.Name = "BtnFilter"
-        Me.BtnFilter.Size = New System.Drawing.Size(65, 35)
+        Me.BtnFilter.Size = New System.Drawing.Size(43, 23)
         Me.BtnFilter.TabIndex = 1
         Me.BtnFilter.Text = "Filtrar"
         Me.BtnFilter.UseVisualStyleBackColor = True
@@ -65,9 +67,10 @@ Partial Class FrmVisorAD
         Me.TxtFilter.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TxtFilter.BackColor = System.Drawing.SystemColors.Desktop
         Me.TxtFilter.ForeColor = System.Drawing.SystemColors.Info
-        Me.TxtFilter.Location = New System.Drawing.Point(87, 36)
+        Me.TxtFilter.Location = New System.Drawing.Point(58, 23)
+        Me.TxtFilter.Margin = New System.Windows.Forms.Padding(2)
         Me.TxtFilter.Name = "TxtFilter"
-        Me.TxtFilter.Size = New System.Drawing.Size(345, 26)
+        Me.TxtFilter.Size = New System.Drawing.Size(231, 20)
         Me.TxtFilter.TabIndex = 2
         '
         'DataGridView1
@@ -92,15 +95,16 @@ Partial Class FrmVisorAD
         Me.DataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.ControlDark
+        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control
         DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.InfoText
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.ControlDarkDark
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.ControlLight
         DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.InfoText
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
         Me.DataGridView1.DefaultCellStyle = DataGridViewCellStyle2
         Me.DataGridView1.EnableHeadersVisualStyles = False
-        Me.DataGridView1.Location = New System.Drawing.Point(12, 80)
+        Me.DataGridView1.Location = New System.Drawing.Point(8, 52)
+        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(2)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
         DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
@@ -113,7 +117,7 @@ Partial Class FrmVisorAD
         Me.DataGridView1.RowHeadersDefaultCellStyle = DataGridViewCellStyle3
         Me.DataGridView1.RowTemplate.Height = 28
         Me.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DataGridView1.Size = New System.Drawing.Size(454, 311)
+        Me.DataGridView1.Size = New System.Drawing.Size(303, 202)
         Me.DataGridView1.TabIndex = 3
         '
         'BtnClearFilter
@@ -123,9 +127,10 @@ Partial Class FrmVisorAD
         Me.BtnClearFilter.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ControlDarkDark
         Me.BtnClearFilter.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnClearFilter.ForeColor = System.Drawing.SystemColors.Info
-        Me.BtnClearFilter.Location = New System.Drawing.Point(433, 33)
+        Me.BtnClearFilter.Location = New System.Drawing.Point(289, 21)
+        Me.BtnClearFilter.Margin = New System.Windows.Forms.Padding(2)
         Me.BtnClearFilter.Name = "BtnClearFilter"
-        Me.BtnClearFilter.Size = New System.Drawing.Size(28, 35)
+        Me.BtnClearFilter.Size = New System.Drawing.Size(19, 23)
         Me.BtnClearFilter.TabIndex = 4
         Me.BtnClearFilter.Text = "X"
         Me.BtnClearFilter.UseVisualStyleBackColor = True
@@ -137,9 +142,10 @@ Partial Class FrmVisorAD
         Me.BtnReload.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ControlDarkDark
         Me.BtnReload.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnReload.ForeColor = System.Drawing.SystemColors.Info
-        Me.BtnReload.Location = New System.Drawing.Point(12, 397)
+        Me.BtnReload.Location = New System.Drawing.Point(8, 258)
+        Me.BtnReload.Margin = New System.Windows.Forms.Padding(2)
         Me.BtnReload.Name = "BtnReload"
-        Me.BtnReload.Size = New System.Drawing.Size(111, 35)
+        Me.BtnReload.Size = New System.Drawing.Size(74, 23)
         Me.BtnReload.TabIndex = 5
         Me.BtnReload.Text = "Refrescar"
         Me.BtnReload.UseVisualStyleBackColor = True
@@ -151,19 +157,20 @@ Partial Class FrmVisorAD
         Me.BtnSaveAD.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ControlDarkDark
         Me.BtnSaveAD.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnSaveAD.ForeColor = System.Drawing.SystemColors.Info
-        Me.BtnSaveAD.Location = New System.Drawing.Point(118, 397)
+        Me.BtnSaveAD.Location = New System.Drawing.Point(86, 258)
+        Me.BtnSaveAD.Margin = New System.Windows.Forms.Padding(2)
         Me.BtnSaveAD.Name = "BtnSaveAD"
-        Me.BtnSaveAD.Size = New System.Drawing.Size(111, 35)
+        Me.BtnSaveAD.Size = New System.Drawing.Size(74, 23)
         Me.BtnSaveAD.TabIndex = 6
         Me.BtnSaveAD.Text = "Grabar"
         Me.BtnSaveAD.UseVisualStyleBackColor = True
         '
         'FrmVisorAD
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Desktop
-        Me.ClientSize = New System.Drawing.Size(478, 444)
+        Me.ClientSize = New System.Drawing.Size(319, 289)
         Me.Controls.Add(Me.BtnSaveAD)
         Me.Controls.Add(Me.BtnReload)
         Me.Controls.Add(Me.BtnClearFilter)
@@ -171,6 +178,7 @@ Partial Class FrmVisorAD
         Me.Controls.Add(Me.TxtFilter)
         Me.Controls.Add(Me.BtnFilter)
         Me.Controls.Add(Me.LblCnx)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "FrmVisorAD"
         Me.Text = "FrmVisorAD"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()

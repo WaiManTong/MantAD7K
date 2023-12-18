@@ -486,7 +486,7 @@ Public Class FrmMantenimientoUsuarios
 #End Region
 #Region "Controles"
     Private Sub FrmMantenimientoUsuarios_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        ColorearFRM(Me)
         Try
             ' Obtener información del usuario actual
             Dim currentUser As WindowsIdentity = WindowsIdentity.GetCurrent()
@@ -699,23 +699,23 @@ Public Class FrmMantenimientoUsuarios
             MessageBox.Show("Datos exportados exitosamente a CSV.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information)
         End If
     End Sub
-    Private Sub SalirToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SalirToolStripMenuItem.Click
+    Private Sub SalirToolStripMenuItem_Click(sender As Object, e As EventArgs)
         Dim response = MsgBox("Realmente desea Salir?", vbYesNo + vbQuestion, "Salir?")
         If response = vbYes Then End
     End Sub
-    Private Sub CargarToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles CargarToolStripMenuItem1.Click
+    Private Sub CargarToolStripMenuItem1_Click(sender As Object, e As EventArgs)
         btnLoadAD.PerformClick()
     End Sub
-    Private Sub GrabarToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles GrabarToolStripMenuItem.Click
+    Private Sub GrabarToolStripMenuItem_Click(sender As Object, e As EventArgs)
         BtnImport.PerformClick()
     End Sub
-    Private Sub CargarToolStripMenuItem2_Click(sender As Object, e As EventArgs) Handles CargarToolStripMenuItem2.Click
+    Private Sub CargarToolStripMenuItem2_Click(sender As Object, e As EventArgs)
         BtnReload.PerformClick()
     End Sub
-    Private Sub GrabarToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles GrabarToolStripMenuItem1.Click
+    Private Sub GrabarToolStripMenuItem1_Click(sender As Object, e As EventArgs)
         BtnSave.PerformClick()
     End Sub
-    Private Sub GenerarQRToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles GenerarQRToolStripMenuItem.Click
+    Private Sub GenerarQRToolStripMenuItem_Click(sender As Object, e As EventArgs)
         BtnQRCoder.PerformClick()
     End Sub
 
